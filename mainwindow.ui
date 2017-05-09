@@ -17,15 +17,175 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
+      <x>10</x>
+      <y>10</y>
       <width>491</width>
-      <height>141</height>
+      <height>151</height>
      </rect>
     </property>
     <property name="title">
      <string>Init Panel</string>
     </property>
+    <widget class="QComboBox" name="portComboBox">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="openPortButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>60</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Open</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshPortButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>30</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Refresh</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="baudrateEdit">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>81</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>234000</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="appIdEdit">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>90</y>
+       <width>391</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Port</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>App ID</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="appKeyEdit">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>120</y>
+       <width>391</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="obtainControlButton">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Obtain Control</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Baudrate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>App Key</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="getVersionButton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>30</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Get Version</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="activateButton">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>60</y>
+       <width>80</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Activate</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
@@ -33,7 +193,7 @@
       <x>520</x>
       <y>10</y>
       <width>491</width>
-      <height>531</height>
+      <height>541</height>
      </rect>
     </property>
     <property name="title">
@@ -43,9 +203,9 @@
      <property name="geometry">
       <rect>
        <x>15</x>
-       <y>41</y>
+       <y>31</y>
        <width>461</width>
-       <height>441</height>
+       <height>461</height>
       </rect>
      </property>
      <property name="editTriggers">
@@ -56,7 +216,7 @@
      <property name="geometry">
       <rect>
        <x>310</x>
-       <y>490</y>
+       <y>500</y>
        <width>80</width>
        <height>29</height>
       </rect>
@@ -69,7 +229,7 @@
      <property name="geometry">
       <rect>
        <x>400</x>
-       <y>490</y>
+       <y>500</y>
        <width>80</width>
        <height>29</height>
       </rect>
@@ -85,7 +245,7 @@
       <x>10</x>
       <y>169</y>
       <width>491</width>
-      <height>371</height>
+      <height>381</height>
      </rect>
     </property>
     <property name="title">
@@ -99,7 +259,7 @@
      <x>0</x>
      <y>0</y>
      <width>1024</width>
-     <height>26</height>
+     <height>19</height>
     </rect>
    </property>
   </widget>
