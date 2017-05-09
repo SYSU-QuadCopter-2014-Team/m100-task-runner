@@ -24,11 +24,20 @@ TEMPLATE = app
 
 
 HEADERS  += mainwindow.h \
-        QonboardSDK.h
+        QonboardSDK.h \
+    tasks/abstracttask.h \
+    tasks/taskmanager.h \
+    singleton/callonce.h \
+    singleton/singleton.h \
+    tasks/tasklistmodel.h \
+    tasks/sampletask.h
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-        QonboardSDK.cpp
+        QonboardSDK.cpp \
+    tasks/taskmanager.cpp \
+    tasks/tasklistmodel.cpp \
+    tasks/sampletask.cpp
 
 INCLUDEPATH += \
         osdk-core/ \
